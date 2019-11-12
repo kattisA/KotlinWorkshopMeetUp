@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         var button = findViewById<Button>(R.id.button)
 
         button.setOnClickListener {
-            Toast.makeText(this, "Hello Meet up!", Toast.LENGTH_LONG).show()
+           toastMsg("Hello World of Meet up", this)
         }
     }
 
