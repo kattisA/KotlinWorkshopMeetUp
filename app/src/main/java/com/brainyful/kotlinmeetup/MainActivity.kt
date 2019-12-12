@@ -1,5 +1,6 @@
 package com.brainyful.kotlinmeetup
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
            toastMsg("Hello World of Meet up", this)
+            startActivity(Intent(this, SecondActivity::class.java))
         }
     }
 
